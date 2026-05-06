@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>提交成功 - 潮州青投</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC',sans-serif;background:linear-gradient(135deg,#FAFAF8,#F8F5EE);min-height:100vh;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;padding:40px 32px}
+.container{max-width:400px}
+.check-circle{width:80px;height:80px;border:2px solid #4CAF50;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 30px;font-size:40px;color:#4CAF50}
+.title{font-size:28px;font-weight:700;color:#D4AF37;margin-bottom:12px}
+.subtitle{font-size:15px;color:#888;line-height:1.8;margin-bottom:40px}
+.info-box{background:rgba(255,255,255,0.8);border:1px solid rgba(212,175,55,0.25);border-radius:16px;padding:24px 20px;margin-bottom:30px;text-align:left}
+.info-item{display:flex;align-items:flex-start;margin-bottom:16px}
+.info-item:last-child{margin-bottom:0}
+.info-label{font-size:13px;color:#888;width:70px;flex-shrink:0}
+.info-value{font-size:14px;color:#333}
+.next-hint{font-size:13px;color:#666;line-height:1.8;margin-bottom:30px}
+.back-btn{display:inline-block;padding:14px 32px;background:transparent;border:1px solid rgba(212,175,55,0.5);border-radius:10px;color:#D4AF37;font-size:15px;text-decoration:none;transition:all .3s}
+.back-btn:active{background:rgba(212,175,55,0.1)}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="check-circle">✓</div>
+  <div class="title">提交成功</div>
+  <div class="subtitle">您的预约已收到，<br>青投顾问将在24小时内与您联系</div>
+  <div class="info-box">
+    <div class="info-item"><span class="info-label">企业名称</span><span class="info-value" id="companyDisplay">—</span></div>
+    <div class="info-item"><span class="info-label">联系电话</span><span class="info-value" id="phoneDisplay">—</span></div>
+    <div class="info-item"><span class="info-label">预计回复</span><span class="info-value">24小时内</span></div>
+  </div>
+  <div class="next-hint">请保持电话畅通<br>如有紧急问题，可直接拨打 <span style="color:#D4AF37;font-size:16px;margin-top:8px;display:inline-block">chaozhouqt.com</span></div>
+  <a href="javascript:history.back()" class="back-btn">返回首页</a>
+</div>
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var company = params.get('company') || '';
+  var phone = params.get('phone') || '';
+  if (company) document.getElementById('companyDisplay').textContent = decodeURIComponent(company);
+  if (phone) document.getElementById('phoneDisplay').textContent = decodeURIComponent(phone);
+})();
+</script>
+</body>
+</html>

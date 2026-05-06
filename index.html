@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>潮州青投 - 企业健康体检</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== PROGRESS BAR ====== -->
+<div id="progressBar" style="position:fixed;top:0;left:0;height:2px;background:#D4AF37;z-index:999;width:0%;transition:width .3s"></div>
+
+<!-- ====== SWIPER ====== -->
+<div class="swiper">
+<div class="swiper-wrapper">
+
+<!-- ========== SLIDE 1: 封面 ========== -->
+<div class="swiper-slide slide-cover">
+  <div class="gold-line"></div>
+  <div class="content">
+    <div class="cover-badge">企业健康体检</div>
+    <h1 class="cover-title">你的公司<br><span class="gold">真的健康吗？</span></h1>
+    <p class="cover-brand">潮州青投</p>
+    <p class="cover-sub">一次体检，看清企业所有问题</p>
+    <div class="divider"></div>
+    <div class="cover-cta-group">
+      <div class="cover-cta-text">已有 <strong>128</strong> 家企业预约体检</div>
+      <div class="cover-cta-arrow">向下滑动，了解详情 ↓</div>
+    </div>
+    <div class="scroll-hint"><div class="scroll-arrow"></div></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 2: 六大关注点 ========== -->
+<div class="swiper-slide slide-focus">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label">企业健康雷达</p>
+    <h2 class="title">六大核心关注点</h2>
+    <div class="focus-grid">
+      <div class="focus-item focus-item-wide">
+        <div class="focus-icon">💰</div>
+        <div class="focus-text">
+          <div class="focus-label">融资</div>
+          <div class="focus-desc">资金通道 · 银行对接 · 抵押担保</div>
+        </div>
+      </div>
+      <div class="focus-item"><div class="focus-icon">🎯</div><div class="focus-label">经营决策</div><div class="focus-desc">战略决断</div></div>
+      <div class="focus-item"><div class="focus-icon">💵</div><div class="focus-label">现金流</div><div class="focus-desc">资金健康</div></div>
+      <div class="focus-item"><div class="focus-icon">📊</div><div class="focus-label">利润</div><div class="focus-desc">财税优化</div></div>
+      <div class="focus-item"><div class="focus-icon">⚖️</div><div class="focus-label">合规</div><div class="focus-desc">法务风控</div></div>
+      <div class="focus-item focus-center"><div class="focus-icon">🔍</div><div class="focus-label">全方位企业体检</div><div class="focus-desc">找出隐性风险 · 定位真实问题</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 3: 问题诊断 ========== -->
+<div class="swiper-slide slide-problems">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label">问题诊断</p>
+    <h2 class="title">这些问题正在困扰企业老板</h2>
+    <div class="problems-list">
+      <div class="problem-item"><div class="problem-num">1</div><div class="problem-text">资金周转紧张，却找不到原因</div></div>
+      <div class="problem-item"><div class="problem-num">2</div><div class="problem-text">明明有利润，账上却没钱</div></div>
+      <div class="problem-item"><div class="problem-num">3</div><div class="problem-text">税负越来越高，结构说不清</div></div>
+      <div class="problem-item"><div class="problem-num">4</div><div class="problem-text">融资屡屡受阻，难以突破</div></div>
+      <div class="problem-item"><div class="problem-num">5</div><div class="problem-text">合同 / 人事存在隐形风险</div></div>
+      <div class="problem-item"><div class="problem-num">6</div><div class="problem-text">财务数据混乱，无法支撑决策</div></div>
+    </div>
+    <div class="problems-footer">
+      <div class="problems-question">你中了几个？</div>
+      <div class="problems-hint">越早发现，越小代价</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 4: 解决方案 ========== -->
+<div class="swiper-slide slide-solution">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label">解决方案</p>
+    <h2 class="title">一站式企业优化方案</h2>
+    <div class="solution-tabs">
+      <div class="sol-tab active" data-tab="finance">金融</div>
+      <div class="sol-tab" data-tab="tax">财税</div>
+      <div class="sol-tab" data-tab="legal">法务</div>
+    </div>
+    <div class="sol-content active" id="sol-finance">
+      <div class="sol-title">💰 金融优化</div>
+      <div class="sol-items">
+        <div class="sol-item"><div class="sol-dot gold"></div><div class="sol-text">融资方案设计 — 根据企业实际情况定制融资路径</div></div>
+        <div class="sol-item"><div class="sol-dot gold"></div><div class="sol-text">银行通道对接 — 直连多家银行，提升通过率</div></div>
+        <div class="sol-item"><div class="sol-dot gold"></div><div class="sol-text">过桥垫资支持 — 短期资金应急，快速到位</div></div>
+        <div class="sol-item"><div class="sol-dot gold"></div><div class="sol-text">供应链金融方案 — 盘活应收账款，优化现金流</div></div>
+      </div>
+    </div>
+    <div class="sol-content" id="sol-tax">
+      <div class="sol-title">📊 财税优化</div>
+      <div class="sol-items">
+        <div class="sol-item"><div class="sol-dot blue"></div><div class="sol-text">税务结构梳理 — 合法合规，优化税负</div></div>
+        <div class="sol-item"><div class="sol-dot blue"></div><div class="sol-text">利润与现金流优化 — 让利润真正落袋</div></div>
+        <div class="sol-item"><div class="sol-dot blue"></div><div class="sol-text">税负降低方案 — 合规前提下降低税负率</div></div>
+        <div class="sol-item"><div class="sol-dot blue"></div><div class="sol-text">财务体系规范 — 账目清晰，决策有据</div></div>
+      </div>
+    </div>
+    <div class="sol-content" id="sol-legal">
+      <div class="sol-title">⚖️ 法务合规</div>
+      <div class="sol-items">
+        <div class="sol-item"><div class="sol-dot yellow"></div><div class="sol-text">合同风险排查 — 找出条款隐患，提前规避</div></div>
+        <div class="sol-item"><div class="sol-dot yellow"></div><div class="sol-text">人事合规优化 — 劳动法规遵从，降低纠纷</div></div>
+        <div class="sol-item"><div class="sol-dot yellow"></div><div class="sol-text">债务结构梳理 — 优化债务组合，减轻压力</div></div>
+        <div class="sol-item"><div class="sol-dot yellow"></div><div class="sol-text">经营风险防控 — 系统性风险识别与应对</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 5: 预期收益 ========== -->
+<div class="swiper-slide slide-benefits">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label">预期收益</p>
+    <h2 class="title">通过体检，你将获得</h2>
+    <div class="benefits-list">
+      <div class="benefit-item"><div class="benefit-icon">📈</div><div class="benefit-text">看清企业真实利润，账目不再糊涂</div></div>
+      <div class="benefit-item"><div class="benefit-icon">🔍</div><div class="benefit-text">找到资金问题根源，对症下药</div></div>
+      <div class="benefit-item"><div class="benefit-icon">💰</div><div class="benefit-text">提升融资成功率，突破资金瓶颈</div></div>
+      <div class="benefit-item"><div class="benefit-icon">🛡️</div><div class="benefit-text">降低潜在经营风险，行稳致远</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 6: 报告封面 ========== -->
+<div class="swiper-slide slide-report">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label" style="color:#D4AF37">企业体检报告</p>
+    <h2 class="title">量身定制的<br>评估报告</h2>
+    <div class="report-card">
+      <div class="report-header-line"></div>
+      <div class="report-main-title">企业融资全面评估报告</div>
+      <div class="report-sub-title">Enterprise Financing Assessment Report</div>
+      <div class="report-divider"></div>
+      <div class="report-meta">
+        <div class="report-meta-item"><span class="report-meta-label">报告编号</span><span class="report-meta-value">20260504</span></div>
+        <div class="report-meta-item"><span class="report-meta-label">评估日期</span><span class="report-meta-value">2026年5月4日</span></div>
+        <div class="report-meta-item"><span class="report-meta-label">客户名称</span><span class="report-meta-value">XXX</span></div>
+      </div>
+      <div class="report-footer">
+        <div class="report-company">潮州市青商投资服务有限公司</div>
+        <div class="report-stamp">青投<br>评估</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 7: 诊断结论 ========== -->
+<div class="swiper-slide slide-diagnosis">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label">诊断结论</p>
+    <h2 class="title">综合评分</h2>
+    <div class="diag-card">
+      <div class="diag-header">
+        <div class="diag-header-title">企业融资全面评估报告</div>
+        <div class="diag-score"><div class="diag-score-num">85</div><div class="diag-score-label">综合评分</div></div>
+      </div>
+      <div class="diag-section">
+        <div class="diag-section-title">第八部分 / 8.1 评分记录表</div>
+        <div class="diag-bars">
+          <div class="diag-bar-row"><div class="diag-bar-label">信用基础</div><div class="diag-bar-track"><div class="diag-bar-fill" style="width:80%;background:#FFB800"></div></div><div class="diag-bar-val" style="color:#FFB800">20</div></div>
+          <div class="diag-bar-row"><div class="diag-bar-label">资产负债</div><div class="diag-bar-track"><div class="diag-bar-fill" style="width:72%;background:#FFB800"></div></div><div class="diag-bar-val" style="color:#FFB800">18</div></div>
+          <div class="diag-bar-row"><div class="diag-bar-label">还款来源</div><div class="diag-bar-track"><div class="diag-bar-fill" style="width:88%;background:#4ADE80"></div></div><div class="diag-bar-val" style="color:#4ADE80">22</div></div>
+          <div class="diag-bar-row"><div class="diag-bar-label">担保物质量</div><div class="diag-bar-track"><div class="diag-bar-fill" style="width:100%;background:#4ADE80"></div></div><div class="diag-bar-val" style="color:#4ADE80">25</div></div>
+        </div>
+      </div>
+      <div class="diag-grade">
+        <div class="diag-grade-badge"><div class="diag-grade-label">综合评级</div><div class="diag-grade-val">A</div></div>
+        <div class="diag-grade-text">优质 · 风险低<br>建议信用贷款或抵押贷款</div>
+      </div>
+      <div class="diag-suggest">
+        <div class="diag-suggest-title">💡 推荐方案</div>
+        <div class="diag-suggest-text">信用贷款 + 抵押 | 可行性最高<br>企业整体资质优良，建议优先选择信用贷款，必要时可配合抵押提升额度。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 8: 预约表单 ========== -->
+<div class="swiper-slide slide-form">
+  <div class="gold-line"></div>
+  <div class="content">
+    <p class="label">预约体检</p>
+    <h2 class="title">填写预约信息</h2>
+    <div class="form-card">
+      <form id="reservationForm" onsubmit="return submitForm(event)">
+        <div class="form-title">企业体检预约</div>
+        <div class="form-sub">我们将在24小时内与您联系</div>
+
+        <div class="form-group">
+          <label class="form-label">姓名 *</label>
+          <input class="form-input" type="text" name="name" placeholder="请输入您的姓名" maxlength="20" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">公司名称 *</label>
+          <input class="form-input" type="text" name="company" placeholder="请输入公司全称" maxlength="50" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">联系电话 *</label>
+          <input class="form-input" type="tel" name="phone" placeholder="请输入手机号码" maxlength="11" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">融资需求</label>
+          <select class="form-select" name="need">
+            <option value="">请选择（选填）</option>
+            <option value="信用贷款">信用贷款</option>
+            <option value="抵押贷款">抵押贷款</option>
+            <option value="抵押+担保">抵押+担保</option>
+            <option value="过桥垫资">过桥垫资</option>
+            <option value="供应链金融">供应链金融</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+
+        <button class="form-submit" id="submitBtn" type="submit">提交预约</button>
+        <div class="form-note">信息仅用于预约联系，绝不对外泄露</div>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✅</div>
+        <div class="form-success-title">提交成功！</div>
+        <div class="form-success-hint">我们将在24小时内与您联系</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /.swiper-wrapper -->
+<div class="swiper-pagination"></div>
+</div><!-- /.swiper -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
