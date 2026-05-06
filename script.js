@@ -64,13 +64,14 @@ function submitForm(event) {
     '⏰ 预约时间：' + new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
   ].join('\n');
 
+  const query = new URLSearchParams({ company, phone });
   fetch('https://open.feishu.cn/open-apis/bot/v2/hook/8a3faff5-65f1-473e-93dc-1a8b0655e9bf', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ msg_type: 'text', content: { text: message } })
   })
-  .then(() => { window.location.href = 'success.html'; })
-  .catch(() => { window.location.href = 'success.html'; });
+  .then(() => { window.location.href = 'success.html?' + query.toString(); })
+  .catch(() => { window.location.href = 'success.html?' + query.toString(); });
 
   return false;
 }
